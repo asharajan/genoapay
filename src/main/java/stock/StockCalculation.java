@@ -2,7 +2,7 @@ package stock;
 
 public class StockCalculation {
     public static int getMaxProfit(int[] stockPrices) {
-        // initialise minimum price as first entry and maximum profit as zero
+        // to start with, initialise minimum price as first entry and maximum profit as zero
         int maxProfit = 0;
         int minPrice = stockPrices[0];
 
@@ -16,7 +16,7 @@ public class StockCalculation {
            if ((stockPrices[i]-minPrice) > maxProfit)
                maxProfit = stockPrices[i]-minPrice;
         }
-
+        
         return maxProfit;
     }
 }
